@@ -1,0 +1,147 @@
+@use "./variables";
+
+html {
+    font-size: 125%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+    font-family: variables.$font1, sans-serif;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+}
+
+nav,
+p {
+    font-family: variables.$font2, sans-serif;
+}
+
+p {
+    font-size: 1rem;
+    ;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    // color: variables.$button;
+    text-transform: uppercase;
+    // background-color: variables.$skills;
+    padding: 10px 15px;
+    // border: 2px solid variables.$skills;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        // background-color: variables.$footer;
+        // border: 2px solid variables.$footer;
+        // color: variables.$contact;
+    }
+
+    &:focus {
+        // background-color: variables.$footer;
+        // border: 2px solid variables.$footer;
+        // color: variables.$contact;
+        // border-radius: 5%;
+    }
+}
+
+fieldset,
+input,
+textarea {
+    border: none;
+    background-color: transparent;
+    // font-family: variables.$body-font, sans-serif;
+}
+
+footer {
+    font-weight: 400;
+
+    p {
+        font-family: variables.$font1;
+        // color: variables.$h1;
+        padding: 15px 0;
+        text-align: center;
+    }
+}
+
+// CLASSES
+
+.wrapper {
+    width: 60%;
+    margin: 0 auto;
+    max-width: 1901px;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+// FONT SIZES!
+
+// HEADINGS:
+h1 {
+    font-size: 3.5rem;
+    letter-spacing: .75mm;
+}
+
+h2 {
+    font-size: 3rem;
+    letter-spacing: .75mm;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+#to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 16px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    // border: 2px solid variables.$accent;
+    font-size: 25px;
+    // color: variables.$accent;
+    // background-color: variables.$button;
+    text-decoration: none;
+    display: none;
+
+    i {
+        font-size: 1.75rem;
+    }
+
+}
+
+#to-top.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

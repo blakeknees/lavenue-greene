@@ -1,0 +1,76 @@
+@use "./variables";
+
+header {
+    background-color: mediumaquamarine;
+    height: 20vh;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+
+        .logo {
+            width: 5%;
+        }
+
+        .nav-bar-flex {
+            margin-top: 10px;
+            flex-direction: row;
+            gap: 50%;
+
+            li {
+                font-size: 1rem;
+                padding: 20px;
+                margin-top: 1rem;
+            }
+
+            li a {
+                // color: variables.$nav-links2;
+                font-weight: 600;
+
+                &:hover {
+                    // border-bottom: 2px solid variables.$nav-links2;
+                }
+            }
+        }
+    }
+}
+
+.header-text-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+
+    h1 {
+        // color: variables.$h1;
+        // text-shadow: 2px 2px 2px variables.$h2purple;
+    }
+
+    h1,
+    p {
+        text-align: center;
+    }
+
+    p {
+        // color: variables.$accent;
+        font-style: italic;
+        font-weight: 600;
+        letter-spacing: 1mm;
+    }
+
+    // scroll down button styles
+    .scroll-down {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        font-size: 60px;
+        animation: 3s infinite ease-in-out pulse;
+
+        &:hover {
+            cursor: pointer;
+            // color: rgba(variables.$nav-links2, 0.8);
+            transition: 0.4s;
+        }
+    }
+}
