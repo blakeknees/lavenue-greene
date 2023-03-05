@@ -422,8 +422,11 @@ header .container .navbar {
           align-items: center;
 }
 header .container .navbar .logo {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   width: 20%;
+}
+header .container .navbar .logo :hover {
+  width: 25%;
 }
 header .container .navbar .nav-menu {
   display: -webkit-box;
@@ -447,7 +450,8 @@ header .container .navbar .nav-menu .nav-link {
   margin-top: 1rem;
 }
 header .container .navbar .nav-menu .nav-link:hover {
-  color: dodgerblue;
+  color: #f9e3e3;
+  letter-spacing: 4px;
 }
 header .container .hamburger {
   display: none;
@@ -523,7 +527,7 @@ main .main-container {
   background-color: #5d0033;
   width: 70%;
   border-radius: 10px;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-left: 3rem;
   margin-right: 3rem;
 }
@@ -544,7 +548,7 @@ main .main-container .main-logo img {
 }
 
 footer .footer-container {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 footer .footer-container p {
   font-family: "Tilt Warp";
