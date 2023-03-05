@@ -361,7 +361,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   letter-spacing: 0.75mm;
 }
 
@@ -401,36 +401,68 @@ h4 {
 }
 
 header {
-  background-color: mediumaquamarine;
+  background-color: #460026;
   height: 20vh;
 }
-header nav {
+header .container {
+  max-width: 1224px;
+  width: 90%;
+  margin: 0 auto;
+}
+header .container .navbar {
+  min-height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-header nav .logo {
-  width: 5%;
+header .container .navbar .logo {
+  margin-top: 1rem;
+  width: 20%;
 }
-header nav .nav-bar-flex {
-  margin-top: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 50%;
+header .container .navbar .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
 }
-header nav .nav-bar-flex li {
+header .container .navbar .nav-menu .nav-link {
+  letter-spacing: 2px;
+  color: #f5f5f5;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
   font-size: 1rem;
   padding: 20px;
   margin-top: 1rem;
 }
-header nav .nav-bar-flex li a {
-  font-weight: 600;
+header .container .navbar .nav-menu .nav-link:hover {
+  color: dodgerblue;
 }
+header .container .hamburger {
+  display: none;
+  cursor: pointer;
+}
+header .container .hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
 .header-text-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -468,4 +500,60 @@ header nav .nav-bar-flex li a {
   cursor: pointer;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+body {
+  background-color: #460026;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .main-container {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #5d0033;
+  width: 70%;
+  border-radius: 10px;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+main .main-container .main-text {
+  width: 50%;
+}
+main .main-container .main-text h1, main .main-container .main-text h2 {
+  color: #f5f5f5;
+  text-align: left;
+}
+main .main-container .main-text span {
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 30px;
+}
+main .main-container .main-logo img {
+  width: 300px;
+}
+
+footer .footer-container {
+  margin-top: 3rem;
+}
+footer .footer-container p {
+  font-family: "Tilt Warp";
+  color: #f5f5f5;
+  letter-spacing: 2px;
+}
+footer .footer-container a {
+  color: #f9e3e3;
+}
+footer .footer-container a :visited {
+  color: #f9e3e3;
 }

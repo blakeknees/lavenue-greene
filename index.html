@@ -14,6 +14,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Tilt+Warp&display=swap"
         rel="stylesheet">
+    
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
 
 </head>
 <body>
@@ -22,40 +28,53 @@
 
     <!-- HEADER  -->
     <header>
-        <nav>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+        <div class="container">
+            <nav class="navbar"> 
+                
+                <a href="index.html" class="logo"><img src="./assets/L'AvenueGreeneFINAL_maroon.png" alt="L'Avenue Greene Logo"></a>
 
-            <div class="logo">
-                <img src="./assets/L'AvenueGreeneFINAL SYMBOL_maroon.png" alt="L'Avenue Greene Logo">
-            </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Brands</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
 
-            <ul class="nav-bar-flex">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Brands</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <!-- MAIN -->
     <main>
-        <h1>L'AVENUE GREENE</h1>
-        <h2>L’Avenue Greene™ is a brand and product development group.</h2>
+        <div class="main-container flex">
+            <div class="main-text flex-column">
+                <h1>Welcome!</h1>
+                <h2>L’Avenue Greene™ 
+                <span>is a brand and product development group.</span></h2>
+            </div>
+            <div class="main-logo">
+                <img src="./assets/L'AvenueGreeneFINAL SYMBOL_maroon.png" alt="L'Avenue Greene chevrons">
+            </div>
+        </div>
     </main>
 
     <!-- FOOTER -->
     <footer>
         <div class="flex-column wrapper">
             <div class="flex-column footer-container">
-                <!-- <button>
-                            <a href="#home">Back to Top</a>
-                        </button> -->
                 <p>Built in 2023 by <a href="https://jenniferblakney.dev" target="_blank">Jennifer Blakney</a></p>
             </div>
         </div>

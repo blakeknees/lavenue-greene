@@ -1,0 +1,20 @@
+@use "./variables";
+
+footer {
+
+    .footer-container {
+        margin-top: 3rem;
+        p {
+            font-family: variables.$font2;
+            color: variables.$h1;
+            letter-spacing: 2px;
+        }
+        a {
+            color: variables.$link2;
+
+            :visited {
+                color: variables.$link2;
+            }
+        }
+    }
+}
