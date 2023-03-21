@@ -1,0 +1,51 @@
+@use './variables';
+
+#brands {
+   margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    .brands-list {
+        li {
+            font-family: variables.$font2;
+            color: variables.$link2;
+        }
+        }
+        .brands-container {
+            justify-content: space-around;
+            align-items: center;
+            background-color: variables.$background-inlay;
+            width: 70%;
+            border-radius: 10px;
+            margin-top: 1rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+    
+            .brands-text {
+                width: 60%;
+    
+                h1 {
+                    color: variables.$h1;
+                    text-align: center;
+                }
+
+                h2 {
+                    color: variables.$link2;
+                }
+    
+                p {
+                    font-family: variables.$font1;
+                    color: variables.$links; 
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+            }
+    
+            .brands-logo {
+                img {
+                    width: 300px;
+                }
+            }
+    
+    }
+}
