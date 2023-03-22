@@ -512,7 +512,10 @@ header .container .hamburger .bar {
       -ms-flex-align: center;
           align-items: center;
 }
-#brands .brands-list li {
+#brands .brands-list {
+  padding-left: 0;
+}
+#brands .brands-list li a {
   font-family: "Tilt Warp";
   color: #f9e3e3;
 }
@@ -534,20 +537,200 @@ header .container .hamburger .bar {
 }
 #brands .brands-container .brands-text h1 {
   color: #f5f5f5;
-  text-align: center;
+  text-align: left;
 }
 #brands .brands-container .brands-text h2 {
   color: #f9e3e3;
+  font-size: 2rem;
+  text-align: left;
 }
-#brands .brands-container .brands-text p {
+#brands .brands-container .brands-logo img {
+  width: 200px;
+}
+#brands .canna-syrup-container {
+  border: 3px solid mediumaquamarine;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: lavender;
+  width: 70%;
+  border-radius: 10px;
+  margin-top: 4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+#brands .canna-syrup-container .canna-syrup-text {
+  width: 60%;
+}
+#brands .canna-syrup-container .canna-syrup-text h2 {
+  color: salmon;
+  text-align: right;
+}
+#brands .canna-syrup-container .canna-syrup-text p {
   font-family: "Open Sans";
-  color: #f5f5f5;
+  color: sandybrown;
   font-weight: 300;
   font-size: 16px;
   line-height: 25px;
+  text-align: right;
 }
-#brands .brands-container .brands-logo img {
+#brands .canna-syrup-container .canna-syrup-logo img {
   width: 300px;
+  border-radius: 10px;
+  border: 2px solid mediumaquamarine;
+}
+#brands .higher-high-container {
+  border: 3px solid #7ac943;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5ecda;
+  width: 70%;
+  border-radius: 10px;
+  margin-top: 4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+#brands .higher-high-container .higher-high-text {
+  width: 60%;
+}
+#brands .higher-high-container .higher-high-text h2 {
+  color: #7ac943;
+  text-align: left;
+}
+#brands .higher-high-container .higher-high-text p {
+  font-family: "Open Sans";
+  color: #62a333;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
+}
+#brands .higher-high-container .higher-high-logo {
+  border: 2px solid #7ac943;
+  border-radius: 10px;
+  padding: 1rem 0.75rem;
+}
+#brands .higher-high-container .higher-high-logo img {
+  width: 300px;
+}
+#brands .dp-bakery-container {
+  border: 3px solid #286aa5;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: whitesmoke;
+  width: 70%;
+  border-radius: 10px;
+  margin-top: 4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+#brands .dp-bakery-container .dp-bakery-text {
+  width: 60%;
+}
+#brands .dp-bakery-container .dp-bakery-text h2 {
+  color: #286aa5;
+  text-align: right;
+}
+#brands .dp-bakery-container .dp-bakery-text p {
+  font-family: "Open Sans";
+  color: #1960a0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: right;
+}
+#brands .dp-bakery-container .dp-bakery-logo {
+  border: 2px solid #286aa5;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+}
+#brands .dp-bakery-container .dp-bakery-logo img {
+  width: 300px;
+  border-radius: 10px;
+}
+#brands .terp-cream-container {
+  border: 3px solid #fadc00;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: whitesmoke;
+  width: 70%;
+  border-radius: 10px;
+  margin-top: 4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+#brands .terp-cream-container .terp-cream-text {
+  width: 60%;
+}
+#brands .terp-cream-container .terp-cream-text h2 {
+  color: #d2426b;
+  text-align: left;
+}
+#brands .terp-cream-container .terp-cream-text p {
+  font-family: "Open Sans";
+  color: #8e676a;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
+}
+#brands .terp-cream-container .terp-cream-logo {
+  border: 2px solid #fadc00;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+}
+#brands .terp-cream-container .terp-cream-logo img {
+  height: 300px;
+  border-radius: 10px;
+}
+#brands .flm-container {
+  border: 3px solid #e3b13f;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6eded;
+  width: 70%;
+  border-radius: 10px;
+  margin-top: 4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+#brands .flm-container .flm-text {
+  width: 60%;
+}
+#brands .flm-container .flm-text h2 {
+  color: #e3b13f;
+  text-align: right;
+}
+#brands .flm-container .flm-text p {
+  font-family: "Open Sans";
+  color: #e0ba5a;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: right;
+}
+#brands .flm-container .flm-logo {
+  border: 2px solid #e3b13f;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+}
+#brands .flm-container .flm-logo img {
+  width: 200px;
+  border-radius: 10px;
 }
 
 body {

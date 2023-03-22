@@ -4,48 +4,245 @@
    margin: 0 auto;
     justify-content: center;
     align-items: center;
+    
     .brands-list {
-        li {
+        padding-left: 0;
+        
+        li a {
             font-family: variables.$font2;
             color: variables.$link2;
         }
-        }
-        .brands-container {
-            justify-content: space-around;
-            align-items: center;
-            background-color: variables.$background-inlay;
-            width: 70%;
-            border-radius: 10px;
-            margin-top: 1rem;
-            padding-left: 1.5rem;
-            padding-right: 1.5rem;
-    
-            .brands-text {
-                width: 60%;
-    
-                h1 {
-                    color: variables.$h1;
-                    text-align: center;
-                }
+    }
+    .brands-container {
+        justify-content: space-around;
+        align-items: center;
+        background-color: variables.$background-inlay;
+        width: 70%;
+        border-radius: 10px;
+        margin-top: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
 
-                h2 {
-                    color: variables.$link2;
-                }
-    
-                p {
-                    font-family: variables.$font1;
-                    color: variables.$links; 
-                    font-weight: 300;
-                    font-size: 16px;
-                    line-height: 25px;
-                }
+        .brands-text {
+            width: 60%;
+
+            h1 {
+                color: variables.$h1;
+                text-align: left;
             }
-    
-            .brands-logo {
-                img {
-                    width: 300px;
-                }
+
+            h2 {
+                color: variables.$link2;
+                font-size: 2rem;
+                text-align: left;
             }
+        }
+
+        .brands-logo {
+            img {
+                width: 200px;
+            }
+        }   
+    }
+
+    .canna-syrup-container {
+        border: 3px solid mediumaquamarine;
+        justify-content: space-around;
+        align-items: center;
+        background-color: lavender;
+        width: 70%;
+        border-radius: 10px;
+        margin-top: 4rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+        .canna-syrup-text {
+            width: 60%;
+
+            h2 {
+                color: salmon;
+                text-align: right;
+            }
+
+            p {
+                font-family: variables.$font1;
+                color: sandybrown;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 25px;
+                text-align: right;
+            }
+        }
+
+        .canna-syrup-logo {
+            img {
+                width: 300px;
+                border-radius: 10px;
+                border: 2px solid mediumaquamarine;
+            }
+        }
+    }
+
+    .higher-high-container {
+        border: 3px solid #7ac943;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #f5ecda;
+        width: 70%;
+        border-radius: 10px;
+        margin-top: 4rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+        .higher-high-text {
+            width: 60%;
+
+            h2 {
+                color: #7ac943;
+                text-align: left;
+            }
+
+            p {
+                font-family: variables.$font1;
+                color: #62a333;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 25px;
+                text-align: left;
+            }
+        }
+
+        .higher-high-logo {
+            border: 2px solid #7ac943;
+            border-radius: 10px;
+            padding: 1rem .75rem;
+            
+            img {
+                width: 300px;
+            }
+        }
+    }
+
+    .dp-bakery-container {
+        border: 3px solid #286aa5;
+        justify-content: space-around;
+        align-items: center;
+        background-color: whitesmoke;
+        width: 70%;
+        border-radius: 10px;
+        margin-top: 4rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+        .dp-bakery-text {
+            width: 60%;
+
+            h2 {
+                color: #286aa5;
+                text-align: right;
+            }
+
+            p {
+                font-family: variables.$font1;
+                color: #1960a0;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 25px;
+                text-align: right;
+            }
+        }
+
+        .dp-bakery-logo {
+            border: 2px solid #286aa5;
+            border-radius: 10px;
+            padding: .75rem 1rem;
+            
+            img {
+                width: 300px;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .terp-cream-container {
+        border: 3px solid #fadc00;
+        justify-content: space-around;
+        align-items: center;
+        background-color: whitesmoke;
+        width: 70%;
+        border-radius: 10px;
+        margin-top: 4rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+        .terp-cream-text {
+            width: 60%;
+
+            h2 {
+                color: #d2426b;
+                text-align: left;
+            }
+
+            p {
+                font-family: variables.$font1;
+                color: #8e676a;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 25px;
+                text-align: left;
+            }
+        }
+
+        .terp-cream-logo {
+            border: 2px solid #fadc00;
+            border-radius: 10px;
+            padding: .75rem 1rem;
+            
+            img {
+                height: 300px;
+                border-radius: 10px;
+            }
+        }
+    }
     
+    .flm-container {
+        border: 3px solid #e3b13f;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #f6eded;
+        width: 70%;
+        border-radius: 10px;
+        margin-top: 4rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+        .flm-text {
+            width: 60%;
+
+            h2 {
+                color: #e3b13f;
+                text-align: right;
+            }
+
+            p {
+                font-family: variables.$font1;
+                color: #e0ba5a;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 25px;
+                text-align: right;
+            }
+        }
+
+        .flm-logo {
+            border: 2px solid #e3b13f;
+            border-radius: 10px;
+            padding: .75rem 1rem;
+            
+            img {
+                width: 200px;
+                border-radius: 10px;
+            }
+        }
     }
 }
