@@ -1,0 +1,102 @@
+@use './variables';
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .about-container {
+        justify-content: space-around;
+        align-items: center;
+        background-color: variables.$background-inlay;
+        width: 70%;
+        border-radius: 10px;
+        margin-top: 1rem;
+        padding: 1.5rem;
+
+        .about-text {
+            width: 40%;
+
+            h1,
+            h3 {
+                color: variables.$h1;
+                text-align: left;
+            }
+        }
+
+        .about-logo {
+            img {
+                width: 300px;
+            }
+        }
+
+    }
+
+    .bk-container {
+        justify-content: space-around;
+        align-items: center;
+        background-color: variables.$background-inlay;
+        width: 70%;
+        border-radius: 10px;
+        margin-top: 3rem;
+        padding: 1.5rem;
+
+        .bk-text {
+            width: 60%;
+
+            h2 {
+                font-family: variables.$font2;
+                color: variables.$h1;
+                text-align: right;
+            }
+            p {
+                font-family: variables.$font1;
+                color: variables.$h1;
+                text-align: right;
+            }
+
+        }
+
+        .bk-pic {
+            img {
+                width: 300px;
+            }
+        }
+
+    }
+
+    .jb-container {
+        justify-content: space-around;
+        align-items: center;
+        background-color: variables.$background-inlay;
+        width: 70%;
+        border-radius: 10px;
+        margin-top: 3rem;
+        padding: 1.5rem;
+
+        .jb-text {
+            width: 60%;
+
+            h2 {
+                font-family: variables.$font2;
+                color: variables.$h1;
+                text-align: left;
+            }
+            p {
+                font-family: variables.$font1;
+                color: variables.$h1;
+                text-align: left;
+            }
+        }
+
+        .jb-pic {
+            img {
+                width: 300px;
+                border-radius: 10px;
+                border: 4px solid variables.$background-red;
+            }
+        }
+
+    }
+
+}
