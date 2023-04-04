@@ -552,6 +552,8 @@ header .container .hamburger .bar {
 }
 #about .bk-container .bk-pic img {
   width: 300px;
+  border-radius: 10px;
+  border: 4px solid #460026;
 }
 #about .jb-container {
   -ms-flex-pack: distribute;
