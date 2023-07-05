@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Avenue Greene</title>
+
+    <!-- STYLE SHEET -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Tilt+Warp&display=swap"
+        rel="stylesheet">
+
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
+
+</head>
+
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- HEADER  -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+
+                <a href="index.html" class="logo"><img src="./assets/L'AvenueGreeneFINAL_maroon.png"
+                        alt="L'Avenue Greene Logo"></a>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="./about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./brands.html" class="nav-link">Brands</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main id="contact" class="flex">
+        <div class="contact-container flex">
+            <div class="contact-text flex-column">
+                <h1>CONTACT US</h1>
+                <h3>Interested in learning more or working with us?</h3>
+                <h3>Get in touch using our contact form.</h3>
+            </div>
+            
+            <form action="https://formspree.io/f/mpzeygzb" method="POST" class="contact-form flex-column" id="form">
+                <label class="flex-column">
+                    Your email:
+                    <input type="email" name="email">
+                </label>
+                <label class="flex-column">
+                    Your message:
+                    <textarea name="message" cols="30" rows="8"></textarea>
+                </label>
+                <div class="g-recaptcha" data-sitekey="6LfPs2AlAAAAAJq2vtA4cVEvco_0aGJMTkLmP73Hy"></div>
+                <br />
+                <button type="submit">Send</button>
+            </form>
+            
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="flex-column wrapper">
+            <div class="flex-column footer-container">
+                <p>Built in 2023 by <a href="https://jenniferblakney.dev" target="_blank">Jennifer Blakney</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

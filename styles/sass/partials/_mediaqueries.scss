@@ -1,0 +1,168 @@
+@use './variables';
+
+// Base styles are formatted for 1901px max width
+
+@media (max-width: 1365px) {
+    /* HOMEPAGE */
+    #home {
+        .main-text {
+            h2 {
+                font-size: 2.25rem;
+                
+            }
+            span {
+                font-size: 1.25rem;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1270px) {
+    /* HOMEPAGE */
+    #home {
+        .main-text {
+            margin-right: 1.5rem;
+        }
+
+        .main-logo {
+            width: 250px;
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+
+    /* HOMEPAGE */
+    #home {
+        .main-text {
+            h2 {
+                font-size: 2rem;
+            }
+            span {
+                font-size: 1rem;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1134px) {
+
+    /* HOMEPAGE */
+    #home {
+        .main-text {
+            h2 {
+                font-size: 1.75rem;
+            }
+
+            span {
+                font-size: 1rem;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1015px) {
+
+    /* HOMEPAGE */
+    #home {
+        .main-text {
+
+            h1 {
+                font-size: 3rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            span {
+                font-size: .75rem;
+            }
+
+        }
+
+        .main-logo {
+            width: 225px;
+        }
+    }
+}
+
+@media (max-width: 890px) {
+    #home {
+        .main-container {
+            flex-direction: column-reverse;
+        }
+    
+        .main-text {
+            width: 100%;
+            h1, h2, span {
+                text-align: center;
+            }
+            h2 {
+                margin-top: 0;
+            }
+            span {
+                width: 55%;
+            }
+        }
+    
+        .main-logo {
+            margin-top: 2rem;
+        }
+
+    }
+}
+
+/* MOBILE */
+@media (max-width: 801px) {
+
+    /* HEADER */
+    header {
+        .container {
+            .hamburger {
+                display: block;
+            }
+            
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+        
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+        
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                gap: 0;
+                flex-direction: column;
+                background-color: #262626;
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+            }
+        
+            .nav-item {
+                margin: 16px 0;
+            }
+        
+            .nav-menu.active {
+                left: 0;
+            }
+        }
+
+    }
+
+    footer {
+        p, a {
+            font-size: .75rem;
+        }
+    }
+}
