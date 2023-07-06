@@ -951,6 +951,11 @@ footer .footer-container a :visited {
   color: #f9e3e3;
 }
 
+@media (max-width: 1665px) {
+  #contact .contact-text {
+    text-align: center;
+  }
+}
 @media (max-width: 1365px) {
   /* HOMEPAGE */
   #home .main-text h2 {
@@ -976,6 +981,26 @@ footer .footer-container a :visited {
   }
   #home .main-text span {
     font-size: 1rem;
+  }
+  #contact .contact-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact .contact-container .contact-text {
+    width: 80%;
+  }
+  #contact .contact-container .contact-text h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  #contact .contact-container .contact-text h3 {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  #contact .contact-container .contact-form {
+    width: 80%;
   }
 }
 @media (max-width: 1134px) {
@@ -1067,7 +1092,7 @@ footer .footer-container a :visited {
     text-align: center;
   }
 }
-/* MOBILE */
+/* TABLET */
 @media (max-width: 801px) {
   /* HEADER */
   header .container .hamburger {
@@ -1105,7 +1130,55 @@ footer .footer-container a :visited {
   header .container .nav-menu.active {
     left: 0;
   }
+  #contact .contact-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact .contact-container .contact-text {
+    width: 90%;
+  }
+  #contact .contact-container .contact-text h1 {
+    font-size: 2.5rem;
+  }
+  #contact .contact-container .contact-text h3 {
+    padding: 0 2rem 0 2rem;
+    font-size: 1rem;
+  }
+  #contact .contact-container .contact-form {
+    width: 95%;
+    margin-left: 0;
+  }
   footer p, footer a {
     font-size: 0.75rem;
+  }
+}
+/* MOBILE */
+@media (max-width: 500px) {
+  #contact .contact-container {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact .contact-container .contact-text {
+    width: 90%;
+  }
+  #contact .contact-container .contact-text h1 {
+    font-size: 2rem;
+  }
+  #contact .contact-container .contact-text h3 {
+    padding: 0 0.25rem 0 0.25rem;
+    font-size: 0.75rem;
+  }
+  #contact .contact-container .contact-form {
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+  }
+  #contact .contact-container .contact-form button {
+    margin-bottom: 1rem;
   }
 }
